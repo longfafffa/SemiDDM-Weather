@@ -1,6 +1,5 @@
-![Framework image](framework .png)
 # Semi-Supervised Denoising Diffusion Model for All-in-One Adverse Weather Removal
-
+![Framework image](images/framework.png)
 ## Introduction
 This is the official repository for our recently submitted paper "Semi-Supervised Denoising Diffusion Model for All-in-One Adverse Weather Removal", where more implementation details are presented.
 
