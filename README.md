@@ -1,12 +1,13 @@
-# Semi-Supervised Denoising Diffusion Model for All-in-One Adverse Weather Removal
+# SemiDDM-Weather: A Semi-supervised Learning Framework for All-in-one Adverse Weather Removal
 <p align="center">
   <img src="images/framework.png" alt="Framework image">
 </p>
+
 ## Introduction
-This is the official repository for our recently submitted paper "Semi-Supervised Denoising Diffusion Model for All-in-One Adverse Weather Removal", where more implementation details are presented.
+This is the official repository for our recently submitted paper "SemiDDM-Weather: A Semi-supervised Learning Framework for All-in-one Adverse Weather Removal", where more implementation details are presented.
 
 ## Abstract
-Adverse weather removal aims to restore clear vision in adverse weather conditions. Existing methods are mostly tailored for specific weather types and rely heavily on extensive labeled data. This paper presents a pioneering semi-supervised all-in-one adverse weather removal framework by incorporating a Denoising Diffusion Model into the teacher-student network, termed SemiDDM-Weather. Specifically, we customize the wavelet diffusion model WaveDiff by adjusting its input and loss function to serve as the backbone of our SemiDDM-Weather. In addition, considering the risk of potentially inaccurate pseudo-labels can mislead the training of WaveDiff, we construct a reliable bank to store the ``best-ever'' outputs from the teacher network, wherein the combination of quality assessment and content consistency constraint determines the ``best-ever'' ones. Experimental results show that our SemiDDM-Weather achieves consistently visual high-quality and superior adverse weather removal over fully-supervised competitors on both synthetic and real-world datasets.
+Adverse weather removal aims to restore clear vision in adverse weather conditions. Existing methods are mostly tailored for specific weather types and rely heavily on extensive labeled data. This paper presents a pioneering semi-supervised all-in-one adverse weather removal framework by incorporating a Denoising Diffusion Model into the teacher-student network, termed SemiDDM-Weather. Specifically, we customize the wavelet diffusion model WaveDiff by adjusting its input and loss function to serve as the backbone of our SemiDDM-Weather. In addition, considering the risk of potentially inaccurate pseudo-labels can mislead the training of WaveDiff, we construct a reliable bank to store the ''best-ever'' outputs from the teacher network, wherein the combination of quality assessment and content consistency constraint determines the ''best-ever'' ones. Experimental results show that our SemiDDM-Weather achieves consistently visual high-quality and superior adverse weather removal over fully-supervised competitors on both synthetic and real-world datasets.
 
 ## Dependencies
 - Ubuntu==18.04
