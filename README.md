@@ -1,5 +1,7 @@
 # Semi-Supervised Denoising Diffusion Model for All-in-One Adverse Weather Removal
-![Framework image](images/framework.png)
+<p align="center">
+  <img src="images/framework.png" alt="Framework image">
+</p>
 ## Introduction
 This is the official repository for our recently submitted paper "Semi-Supervised Denoising Diffusion Model for All-in-One Adverse Weather Removal", where more implementation details are presented.
 
@@ -34,6 +36,24 @@ python train.py --num_channels 12 --num_channels_dae 128 --num_timesteps 4 --num
 ````bash
 python test.py --num_channels 12 --num_channels_dae 128 --num_timesteps 4 --num_res_blocks 2 --nz 100 --z_emb_dim 256 --n_mlp 4 --ch_mult 1 2 2 2  --image_size 64 --current_resolution 32 --attn_resolutions 16 --net_type wavelet --use_pytorch_wavelet
 ````
+### 5. Results
+<details>
+<summary><strong>Raindrop Removal</strong> (click to expand) </summary>
+<p align="center"><img src = "images/raindrop.png"> </p>
+  <p align="center"><img src = "images/raindrop_table.png"> </p>
+</details>
+
+<details>
+<summary><strong>Image Deraining</strong> (click to expand) </summary>
+<p align="center"><img src = "images/rain.png"> </p>
+  <p align="center"><img src = "images/rain_table.png"> </p>
+</details>
+
+<details>
+<summary><strong>Image Desnowing</strong> (click to expand) </summary>
+<p align="center"><img src = "images/snow.png"> </p>
+  <p align="center"><img src = "images/snow_table.png"> </p>
+</details>
 
 ## Acknowledgement
 * The training code architecture is based on the [Semi-UIR](https://github.com/Huang-ShiRui/Semi-UIR) and [WaveDiff](https://github.com/VinAIResearch/WaveDiff)and thanks for their work.
