@@ -28,7 +28,7 @@ python train_first_stage.py --num_channels 12 --num_channels_dae 128 --num_times
 ````
 ### 3. Init the reliable bank
 ````bash
-python init_reliable_bank.py --num_channels 12 --num_channels_dae 128 --num_timesteps 4 --num_res_blocks 2 --nz 100 --z_emb_dim 256 --n_mlp 4 --ch_mult 1 2 2 2  --crop_size 64 --current_resolution 32 --attn_resolutions 16 --net_type wavelet --use_pytorch_wavelet --path ./check_point/first_stage.pth
+python init_reliable_bank.py --num_channels 12 --num_channels_dae 128 --num_timesteps 4 --num_res_blocks 2 --nz 100 --z_emb_dim 256 --n_mlp 4 --ch_mult 1 2 2 2  --crop_size 64 --current_resolution 32 --attn_resolutions 16 --net_type wavelet --use_pytorch_wavelet --path ./checkpoints/first_stage.pth
 ````
 ### 4. Train the second stage
 ````bash
@@ -36,8 +36,9 @@ python train_second_stage.py --num_channels 12 --num_channels_dae 128 --num_time
 ````
 
 ### 5. Test
+The pre-trained path can be download from [GoogleDrive](https://drive.google.com/drive/folders/1LGgPV9YnwrB0dDTWxxgIey1qLxvDsHFw?usp=drive_link)
 ````bash
-python test.py --num_channels 12 --num_channels_dae 128 --num_timesteps 4 --num_res_blocks 2 --nz 100 --z_emb_dim 256 --n_mlp 4 --ch_mult 1 2 2 2  --crop_size 64 --current_resolution 32 --attn_resolutions 16 --net_type wavelet --use_pytorch_wavelet --path ./check_point/test.pth
+python test.py --num_channels 12 --num_channels_dae 128 --num_timesteps 4 --num_res_blocks 2 --nz 100 --z_emb_dim 256 --n_mlp 4 --ch_mult 1 2 2 2  --crop_size 64 --current_resolution 32 --attn_resolutions 16 --net_type wavelet --use_pytorch_wavelet --path ./checkpoints/second_stage.pth
 ````
 ### 6. Results
 <details>
