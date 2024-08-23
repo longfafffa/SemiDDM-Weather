@@ -36,7 +36,8 @@ python train_second_stage.py --num_channels 12 --num_channels_dae 128 --num_time
 ````
 
 ### 5. Test
-The pre-trained path can be download from [GoogleDrive](https://drive.google.com/drive/folders/1LGgPV9YnwrB0dDTWxxgIey1qLxvDsHFw?usp=drive_link)
+The pre-trained model can be downloaded from [GoogleDrive](https://drive.google.com/drive/folders/1LGgPV9YnwrB0dDTWxxgIey1qLxvDsHFw?usp=drive_link).
+To test the model, use the following command:
 ````bash
 python test.py --num_channels 12 --num_channels_dae 128 --num_timesteps 4 --num_res_blocks 2 --nz 100 --z_emb_dim 256 --n_mlp 4 --ch_mult 1 2 2 2  --crop_size 64 --current_resolution 32 --attn_resolutions 16 --net_type wavelet --use_pytorch_wavelet --path ./checkpoints/second_stage.pth
 ````
