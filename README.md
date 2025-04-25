@@ -44,19 +44,22 @@ python test.py --num_channels 12 --num_channels_dae 128 --num_timesteps 4 --num_
 ### 6. Results
 <details>
 <summary><strong>Raindrop Removal</strong> (click to expand) </summary>
-<p align="center"><img src = "images/raindrop.png"> </p>
+<p align="center"><img src = "images/raindrop1.png"> </p>
+  <p align="center"><img src = "images/raindrop2.png"> </p>
   <p align="center"><img src = "images/raindrop_table.png"> </p>
 </details>
 
 <details>
 <summary><strong>Image Deraining</strong> (click to expand) </summary>
-<p align="center"><img src = "images/rain.png"> </p>
+<p align="center"><img src = "images/rain1.png"> </p>
+  <p align="center"><img src = "images/rain2.png"> </p>
   <p align="center"><img src = "images/rain_table.png"> </p>
 </details>
 
 <details>
 <summary><strong>Image Desnowing</strong> (click to expand) </summary>
-<p align="center"><img src = "images/snow.png"> </p>
+<p align="center"><img src = "images/snow1.png"> </p>
+  <p align="center"><img src = "images/snow2.png"> </p>
   <p align="center"><img src = "images/snow_table.png"> </p>
 </details>
 
